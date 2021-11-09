@@ -7,18 +7,33 @@
 // scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
+const ul = document.querySelector('.list');
+
 for(let i=1; i <= 100; i++){
+
+    
 
     const number = i;
     
     if( (number % 3 == 0) &&(number % 5 == 0) ){
         console.log('FizzBuzz');
+        let mult35 = 'FizzBuzz';
+        ul.innerHTML += `<li class="box red">${mult35}</li>`
     }else if( number % 3 == 0){
         console.log('Fizz');
+        let mult3 = 'Fizz';
+        ul.innerHTML += `<li class="box green">${mult3}</li>`
     }else if( number % 5 == 0){
         console.log('Buzz');
+        let mult5 = 'Buzz';
+        ul.innerHTML += `<li class="box yellow">${mult5}</li>`
     }else{
         console.log(i);
-    }
+        ul.innerHTML += `<li class="box blue">${i}</li>`
+    };
+
+    // ul.innerHTML += `<li class="box">${number}</li>`
+
+
 
 };

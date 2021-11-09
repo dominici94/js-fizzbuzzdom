@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: rgb(8, 59, 76);
+}
+
+.container{
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    padding: 30px;
+}
+
+
+.list{
+    list-style: none;
+}
+
+.box{
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue{
+    background-color: darkcyan;
+}
+
+.green{
+    background-color: greenyellow;
+}
+
+.yellow{
+    background-color: goldenrod;
+}
+
+.red{
+    background-color: crimson;
+}
