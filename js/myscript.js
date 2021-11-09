@@ -7,7 +7,9 @@
 // scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
-const ul = document.querySelector('.list');
+const cont = document.querySelector('.container-box');
+console.log(cont);
+
 
 for(let i=1; i <= 100; i++){
 
@@ -15,18 +17,18 @@ for(let i=1; i <= 100; i++){
     
     if( (number % 3 == 0) &&(number % 5 == 0) ){
 
-        let mult35 = 'FizzBuzz';
-        ul.innerHTML += `<li class="box red">${mult35}</li>`
+        const mult35 = 'FizzBuzz';
+        cont.innerHTML += `<div class="box red">${mult35}</div>`
     }else if( number % 3 == 0){
     
-        let mult3 = 'Fizz';
-        ul.innerHTML += `<li class="box green">${mult3}</li>`
+        const mult3 = 'Fizz';
+        cont.innerHTML += `<div class="box green">${mult3}</div>`
     }else if( number % 5 == 0){
     
-        let mult5 = 'Buzz';
-        ul.innerHTML += `<li class="box yellow">${mult5}</li>`
+        const mult5 = 'Buzz';
+        cont.innerHTML += `<div class="box yellow">${mult5}</div>`
     }else{
 
-        ul.innerHTML += `<li class="box blue">${i}</li>`
+        cont.innerHTML += `<div class="box blue">${i}</div>`
     };
 };
